@@ -1,0 +1,13 @@
+﻿  Data.cpp
+f:\作业\第三学期\软件工程\subway\subway\subway\data.cpp(15): warning C4477: “scanf_s”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“std::string *”
+  f:\作业\第三学期\软件工程\subway\subway\subway\data.cpp(15): note: 此参数由转换说明符使用
+f:\作业\第三学期\软件工程\subway\subway\subway\data.cpp(15): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
+  f:\作业\第三学期\软件工程\subway\subway\subway\data.cpp(15): note: 占位符和其参数预计 2 可变参数，但提供的却是 1 参数
+  f:\作业\第三学期\软件工程\subway\subway\subway\data.cpp(15): note: 缺失的可变参数 2 为格式字符串“%s”所需
+  f:\作业\第三学期\软件工程\subway\subway\subway\data.cpp(15): note: 此参数用作缓冲区大小
+f:\作业\第三学期\软件工程\subway\subway\subway\data.cpp(17): warning C4477: “printf_s”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“std::string”
+f:\作业\第三学期\软件工程\subway\subway\subway\data.cpp(108): warning C4477: “printf_s”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“std::string”
+f:\作业\第三学期\软件工程\subway\subway\subway\data.cpp(111): warning C4477: “printf_s”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“std::string”
+  main.cpp
+  正在生成代码...
+  Subway.vcxproj -> F:\作业\第三学期\软件工程\subway\Subway\Debug\Subway.exe
