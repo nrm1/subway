@@ -14,10 +14,12 @@ int main(int argc,char* argv[])
 	if (!data.readData())
 	{
 		cout << "Read Data Error!" << endl;
+		return -1;
 	}
 	if (!con.isParameter(data,argc, argv, &mark, &stationPoint1, &stationPoint2))
 	{
 		cout << "Input Parameter Error!" << endl;
+		return -1;
 	}
 	path = con.findPath(data,mark, stationPoint1, stationPoint2);
 	cout << path << endl;

@@ -256,13 +256,12 @@ string Data::passStationAtLeast(Station *stationPoint1, Station *stationPoint2,i
 	while (headPoint != NULL)
 	{
 		lineName = headPoint->lineName;
-		
+
 		if (mode == 1 && isPass(headPoint))
 		{
 			headPoint = headPoint->nextPoint;
 			continue;
 		}
-		
 		if (mode == 1 && no < headPoint->no)
 		{
 			break;
@@ -284,7 +283,10 @@ string Data::passStationAtLeast(Station *stationPoint1, Station *stationPoint2,i
 			}
 		}
 		int transLineNo = headPoint->stationPoint->transLineNo;
-		headPoint->stationPoint->mark = 2;
+		if (mode == 0)
+		{
+			headPoint->stationPoint->mark = 2;
+		}
 		
 		struct Station *temp;
 		for (int i = 0; i < transLineNo; i++)
@@ -338,7 +340,7 @@ string Data::passStationAtLeast(Station *stationPoint1, Station *stationPoint2,i
 					tailPoint->stationPoint = temp;
 					tailPoint->nextPoint = NULL;
 					tailPoint->lineName = headPoint->stationPoint->transLine[i]->lineName;
-					tailPoint->no++;
+					tailPoint->no = headPoint->no+1;
 				}
 				temp = headPoint->stationPoint->transLine[i]->nextpoint;
 				if (temp != NULL && temp->mark != 2)
@@ -350,7 +352,7 @@ string Data::passStationAtLeast(Station *stationPoint1, Station *stationPoint2,i
 					tailPoint->stationPoint = temp;
 					tailPoint->nextPoint = NULL;
 					tailPoint->lineName = headPoint->stationPoint->transLine[i]->lineName;
-					tailPoint->no++;
+					tailPoint->no = headPoint->no+1;
 				}
 			}
 		}
