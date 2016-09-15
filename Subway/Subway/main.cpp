@@ -19,10 +19,13 @@ int main(int argc,char* argv[])
 	if (!con.isParameter(data,argc, argv, &mark, &stationPoint1, &stationPoint2))
 	{
 		cout << "Input Parameter Error!" << endl;
-		return -1;
 	}
-	path = con.findPath(data,mark, stationPoint1, stationPoint2);
-	cout << path << endl;
+	else
+	{
+		path = con.findPath(data, mark, stationPoint1, stationPoint2);
+		cout << path << endl;
+	}
+	
 	while (true)
 	{
 		string stationName;

@@ -1,4 +1,8 @@
 ﻿  Data.cpp
+  main.cpp
+  Console.cpp
+  正在运行 C/C++ 代码分析...
+  正在生成代码...
 LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/PROFILE”规范)
 Console.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
   Subway.vcxproj -> F:\作业\第三学期\软件工程\subway\Subway\x64\Debug\Subway.exe
